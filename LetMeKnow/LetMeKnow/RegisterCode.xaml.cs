@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Xamarin.Essentials;
 
 namespace LetMeKnow
 {
@@ -18,38 +17,19 @@ namespace LetMeKnow
 			InitializeComponent ();
 		}
 
-        private void email_TextChanged(object sender, TextChangedEventArgs e)
+        private void emailField_TextChanged(object sender, TextChangedEventArgs e)
         {
-            button.IsEnabled = email.Text != "";
+            button.IsEnabled = emailField.Text != "";
         }
 
         private async void button_Clicked(object sender, EventArgs e)
         {
-            await SendEmail("LetMeKnow Registration",
-                            "Hi,\n\nClick the link below to activate your LetMeKnow account!\n\nLINK",
-                            new List<string> { email.Text } );
-            await DisplayAlert("Check you mailbox!", "We have sent an confirmation email to " + email.Text + ".", "Got it!");
-        }
-
-        // ------- <Ref> Taken from https://docs.microsoft.com/en-us/xamarin/essentials/email?tabs=android --------
-        private async Task SendEmail(string subject, string body, List<string> recipients) {
-            try {
-                var message = new EmailMessage {
-                    Subject = subject,
-                    Body = body,
-                    To = recipients,
-                    //Cc = ccRecipients,
-                    //Bcc = bccRecipients
-                };
-                await Email.ComposeAsync(message);
+            if (true) {
+                await DisplayAlert("Check you mailbox!", "We have sent a verification code to " + emailField.Text + ".", "Got it!");
             }
-            catch (FeatureNotSupportedException fbsEx) {
-                // Email is not supported on this device
-            }
-            catch (Exception ex) {
-                // Some other exception occurred
+            else {
+                await DisplayAlert("Failed", "We couldn't send you the code. Sorry.", "Got it!");
             }
         }
-        // ---------- </Ref> Taken -----------
     }
 }

@@ -10,11 +10,11 @@
                    HorizontalOptions="CenterAndExpand"
                    FontSize="Medium"/>
             <Entry Placeholder="Enter Email" 
-                   x:Name="email"
+                   x:Name="emailField"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    IsTextPredictionEnabled="false" 
-                   TextChanged="email_TextChanged" />
+                   TextChanged="emailField_TextChanged" />
             <Button Text="Verify Email"
                     x:Name="button"
                     VerticalOptions="CenterAndExpand"

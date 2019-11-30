@@ -11,6 +11,12 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xamarin.Build.Download/0.4.11": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
@@ -24,6 +30,40 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.Core/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Core.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Core.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.Database/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.Firebase.iOS.Core": "6.1.0"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Database.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Database.dll": {}
         }
       },
       "Xamarin.Forms/4.3.0.991211": {
@@ -174,6 +214,12 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xamarin.Build.Download/0.4.11": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
@@ -187,6 +233,40 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.Core/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Core.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Core.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.Database/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.Firebase.iOS.Core": "6.1.0"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Database.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Database.dll": {}
         }
       },
       "Xamarin.Forms/4.3.0.991211": {
@@ -337,6 +417,12 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xamarin.Build.Download/0.4.11": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
@@ -350,6 +436,40 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.Core/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Core.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Core.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.Database/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.Firebase.iOS.Core": "6.1.0"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Database.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Database.dll": {}
         }
       },
       "Xamarin.Forms/4.3.0.991211": {
@@ -500,6 +620,12 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xamarin.Build.Download/0.4.11": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
@@ -513,6 +639,40 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.Core/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Core.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Core.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.Database/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.Firebase.iOS.Core": "6.1.0"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Database.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Database.dll": {}
         }
       },
       "Xamarin.Forms/4.3.0.991211": {
@@ -701,6 +861,23 @@
         "version.txt"
       ]
     },
+    "Xamarin.Build.Download/0.4.11": {
+      "sha512": "ujbXg6i04WGkDL/LkDanVkFmydJLNQav1lUz8ryxzKGVpiT5SSNXDwfYnGGYzkvAryz1S0gnIMtQrdKaxfHIXA==",
+      "type": "package",
+      "path": "xamarin.build.download/0.4.11",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Mono.Cecil.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/System.Net.Http.Formatting.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.4.11.nupkg.sha512",
+        "xamarin.build.download.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.3.1": {
       "sha512": "BR0PitMx3KF3QZnPFvVWAVJ1kEof3IiMCi4tipIytTw/wdYs7Tp1cLMTq7tGjXiwFrItQmTNEOTM0I7XWMxtSg==",
       "type": "package",
@@ -750,6 +927,31 @@
         "readme.txt",
         "xamarin.essentials.1.3.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
+      ]
+    },
+    "Xamarin.Firebase.iOS.Core/6.1.0": {
+      "sha512": "QIymfkf408iIErt1BXBE+5DScrgsL/rMHw41JUc14eR+6/xkdLG2JVNGtXfXSSlYrViQW+4Y1RxGAre1N2/tEg==",
+      "type": "package",
+      "path": "xamarin.firebase.ios.core/6.1.0",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Xamarin.Firebase.iOS.Core.targets",
+        "lib/xamarinios10/Firebase.Core.dll",
+        "xamarin.firebase.ios.core.6.1.0.nupkg.sha512",
+        "xamarin.firebase.ios.core.nuspec"
+      ]
+    },
+    "Xamarin.Firebase.iOS.Database/6.0.0": {
+      "sha512": "s0NcbTACxHMV9ZfZssoQSj9IvuHgcQSbEYTzkBDJCkYjBzoQU5+bvfBIhS8c7/s6tcSMdmNtH9jNXxMb84mHlQ==",
+      "type": "package",
+      "path": "xamarin.firebase.ios.database/6.0.0",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/xamarinios10/Firebase.Database.dll",
+        "xamarin.firebase.ios.database.6.0.0.nupkg.sha512",
+        "xamarin.firebase.ios.database.nuspec"
       ]
     },
     "Xamarin.Forms/4.3.0.991211": {
@@ -1010,6 +1212,7 @@
     "Xamarin.iOS,Version=v1.0": [
       "LetMeKnow >= 1.0.0",
       "Xamarin.Essentials >= 1.3.1",
+      "Xamarin.Firebase.iOS.Database >= 6.0.0",
       "Xamarin.Forms >= 4.3.0.991211"
     ]
   },
@@ -1053,6 +1256,10 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.3.1, )"
+          },
+          "Xamarin.Firebase.iOS.Database": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
