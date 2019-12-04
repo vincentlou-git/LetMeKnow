@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMeKnow.Android", "LetMeKnow\LetMeKnow.Android\LetMeKnow.Android.csproj", "{52F64E98-ED18-4672-8124-62690B85822D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMeKnow.Android", "LetMeKnow.Android\LetMeKnow.Android.csproj", "{52F64E98-ED18-4672-8124-62690B85822D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMeKnow.iOS", "LetMeKnow\LetMeKnow.iOS\LetMeKnow.iOS.csproj", "{EE07285F-CCAA-4AB4-887A-C405CA5C3AB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMeKnow.iOS", "LetMeKnow.iOS\LetMeKnow.iOS.csproj", "{EE07285F-CCAA-4AB4-887A-C405CA5C3AB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMeKnow", "LetMeKnow\LetMeKnow\LetMeKnow.csproj", "{ACDC486F-A81C-4179-B529-51F10562FDD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetMeKnow", "LetMeKnow\LetMeKnow.csproj", "{ACDC486F-A81C-4179-B529-51F10562FDD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
