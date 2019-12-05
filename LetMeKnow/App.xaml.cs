@@ -3,8 +3,6 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using LetMeKnow.PageLogic;
-
 using Firebase.Database;
 using System.Collections.Generic;
 using System.Reflection;
@@ -20,7 +18,7 @@ namespace LetMeKnow {
             InitializeComponent();
 
             Container = BuildContainer(module);
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart() {

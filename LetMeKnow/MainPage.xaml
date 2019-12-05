@@ -4,24 +4,27 @@
              x:Class="LetMeKnow.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Register by entering your university email:"
+            <Label Text="Choose an action:"
                    x:Name="label"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"
                    FontSize="Medium"/>
-            <Entry Placeholder="Enter Email" 
-                   x:Name="emailField"
-                   Text="{Binding Email}"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   IsTextPredictionEnabled="false" 
-                   TextChanged="emailField_TextChanged" />
-            <Button Text="Verify Email"
-                    x:Name="button"
+            <Button Text="Register as Student"
+                    x:Name="register"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
-                    IsEnabled="False"
-                    Clicked="button_Clicked" />
+                    Clicked="register_Clicked" />
+            <Button Text="Login as Student/Staff"
+                    x:Name="loginStudent"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Clicked="login_Clicked" />
+            <Button Text="Enter Pair Code as Parent"
+                    x:Name="pair"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Clicked="pair_Clicked" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
