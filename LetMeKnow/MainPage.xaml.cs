@@ -3,7 +3,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using LetMeKnow.Pages;
+using LetMeKnow.Views;
 
 namespace LetMeKnow {
     [XamlCompilation(XamlCompilationOptions.Compile)]

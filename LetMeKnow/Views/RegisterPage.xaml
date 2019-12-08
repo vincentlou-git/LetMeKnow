@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LetMeKnow.Views.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical"
+            Padding="20"
+            VerticalOptions="Center">
+            <Label 
+                Text="Register by entering your university email:"
+                x:Name="label"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Medium"/>
+            <Entry 
+                Placeholder="Enter Email" 
+                x:Name="emailField"
+                Text="{Binding Email}"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                IsTextPredictionEnabled="false" 
+                TextChanged="emailField_TextChanged" />
+            <Button 
+                Text="Verify Email"
+                x:Name="button"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                IsEnabled="False"
+                Clicked="button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

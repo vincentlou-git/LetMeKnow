@@ -41,7 +41,7 @@ namespace LetMeKnow {
             var asm = Assembly.GetExecutingAssembly();
 
             builder.RegisterAssemblyTypes(asm)
-                .Where(t => t.Namespace == "LetMeKnow.PageLogic");
+                .Where(t => t.Namespace == "LetMeKnow.ViewModels");
 
             builder.RegisterModule(module);
             return builder.Build();
