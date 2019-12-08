@@ -12,6 +12,7 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.4" />
     <PackageReference Include="FirebaseDatabase.net" Version="4.0.4" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.6.1" />
     <PackageReference Include="Xamarin.Firebase.iOS.Auth" Version="4.4.1.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991221" />
   </ItemGroup>

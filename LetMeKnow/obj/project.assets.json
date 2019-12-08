@@ -25,6 +25,12 @@
           "lib/netstandard2.0/Firebase.dll": {}
         }
       },
+      "Fody/4.2.1": {
+        "type": "package",
+        "build": {
+          "build/Fody.targets": {}
+        }
+      },
       "LiteDB/4.1.4": {
         "type": "package",
         "dependencies": {
@@ -78,6 +84,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PropertyChanged.Fody/2.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "4.2.1",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/PropertyChanged.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/PropertyChanged.dll": {}
+        },
+        "build": {
+          "build/PropertyChanged.Fody.props": {}
         }
       },
       "System.IO/4.3.0": {
@@ -241,6 +263,41 @@
         "firebasedatabase.net.nuspec",
         "lib/netstandard2.0/Firebase.dll",
         "lib/netstandard2.0/Firebase.xml"
+      ]
+    },
+    "Fody/4.2.1": {
+      "sha512": "+qRvdH3bjQxGZ5DiuagjUj2UMXnDaqGc/04MLeI2lfjNVhLQ7oHcJwIV3n2wmQylF6RvPLjP/iPOukqAwZu0Hw==",
+      "type": "package",
+      "path": "fody/4.2.1",
+      "files": [
+        ".signature.p7s",
+        "build/Fody.targets",
+        "fody.4.2.1.nupkg.sha512",
+        "fody.nuspec",
+        "netclassictask/Fody.dll",
+        "netclassictask/FodyCommon.dll",
+        "netclassictask/FodyHelpers.dll",
+        "netclassictask/FodyIsolated.dll",
+        "netclassictask/Mono.Cecil.Mdb.dll",
+        "netclassictask/Mono.Cecil.Mdb.pdb",
+        "netclassictask/Mono.Cecil.Pdb.dll",
+        "netclassictask/Mono.Cecil.Pdb.pdb",
+        "netclassictask/Mono.Cecil.Rocks.dll",
+        "netclassictask/Mono.Cecil.Rocks.pdb",
+        "netclassictask/Mono.Cecil.dll",
+        "netclassictask/Mono.Cecil.pdb",
+        "netstandardtask/Fody.dll",
+        "netstandardtask/FodyCommon.dll",
+        "netstandardtask/FodyHelpers.dll",
+        "netstandardtask/FodyIsolated.dll",
+        "netstandardtask/Mono.Cecil.Mdb.dll",
+        "netstandardtask/Mono.Cecil.Mdb.pdb",
+        "netstandardtask/Mono.Cecil.Pdb.dll",
+        "netstandardtask/Mono.Cecil.Pdb.pdb",
+        "netstandardtask/Mono.Cecil.Rocks.dll",
+        "netstandardtask/Mono.Cecil.Rocks.pdb",
+        "netstandardtask/Mono.Cecil.dll",
+        "netstandardtask/Mono.Cecil.pdb"
       ]
     },
     "LiteDB/4.1.4": {
@@ -442,6 +499,27 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "PropertyChanged.Fody/2.6.1": {
+      "sha512": "/aLvkgNsRW8/7OOGU9tOIKtaHUZ8an1ziy8sDSjgbILnx4aNiV7ZmtyUsy6EUIJehyyNlVmRItcy+yoDBimW4g==",
+      "type": "package",
+      "path": "propertychanged.fody/2.6.1",
+      "files": [
+        ".signature.p7s",
+        "build/PropertyChanged.Fody.props",
+        "lib/net452/PropertyChanged.dll",
+        "lib/net452/PropertyChanged.xml",
+        "lib/netstandard1.0/PropertyChanged.dll",
+        "lib/netstandard1.0/PropertyChanged.xml",
+        "netclassicweaver/PropertyChanged.Fody.dll",
+        "netclassicweaver/PropertyChanged.Fody.pdb",
+        "netclassicweaver/PropertyChanged.Fody.xcf",
+        "netstandardweaver/PropertyChanged.Fody.dll",
+        "netstandardweaver/PropertyChanged.Fody.pdb",
+        "netstandardweaver/PropertyChanged.Fody.xcf",
+        "propertychanged.fody.2.6.1.nupkg.sha512",
+        "propertychanged.fody.nuspec"
       ]
     },
     "System.IO/4.3.0": {
@@ -1284,6 +1362,7 @@
       "Autofac >= 4.9.4",
       "FirebaseDatabase.net >= 4.0.4",
       "NETStandard.Library >= 2.0.3",
+      "PropertyChanged.Fody >= 2.6.1",
       "Xamarin.Firebase.iOS.Auth >= 4.4.1.1",
       "Xamarin.Forms >= 4.3.0.991221"
     ]
@@ -1342,6 +1421,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "PropertyChanged.Fody": {
+            "target": "Package",
+            "version": "[2.6.1, )"
           },
           "Xamarin.Firebase.iOS.Auth": {
             "target": "Package",
