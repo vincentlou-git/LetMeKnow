@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Reflection;
 using System;
 
+using LetMeKnow.Views;
+
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace LetMeKnow {
     public partial class App : Application {
@@ -18,7 +20,7 @@ namespace LetMeKnow {
             InitializeComponent();
 
             Container = BuildContainer(module);
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MenuPage());
         }
 
         protected override void OnStart() {

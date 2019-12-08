@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LetMeKnow.Views.MenuPage">
+    <ContentPage.Resources>
+        <LayoutOptions x:Key="btnHorzOptions"
+                           Alignment="Center" />
+
+        <LayoutOptions x:Key="btnVertOptions"
+                           Alignment="Center"
+                           Expands="True" />
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Choose an action:"
+                   x:Name="label"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Medium"/>
+            <Button Text="Register as Student"
+                    x:Name="register"
+                    VerticalOptions="{StaticResource btnVertOptions}"
+                    HorizontalOptions="{StaticResource btnHorzOptions}"
+                    Clicked="register_Clicked" />
+            <Button Text="Login as Student/Staff"
+                    x:Name="loginStudent"
+                    VerticalOptions="{StaticResource btnVertOptions}"
+                    HorizontalOptions="{StaticResource btnHorzOptions}"
+                    Clicked="login_Clicked" />
+            <Button Text="Enter Pair Code as Parent"
+                    x:Name="pair"
+                    VerticalOptions="{StaticResource btnVertOptions}"
+                    HorizontalOptions="{StaticResource btnHorzOptions}"
+                    Clicked="pair_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
