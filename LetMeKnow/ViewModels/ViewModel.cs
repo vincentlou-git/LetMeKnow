@@ -2,7 +2,8 @@
 
 namespace LetMeKnow.ViewModels
 {
-    // All page logic subclasses should extend this to have property changed detection
+    // All ViewModel subclasses should extend this to have property changed detection
+    // so targets can be updated when a property changes
     public class ViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
