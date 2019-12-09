@@ -13,13 +13,15 @@
     <PackageReference Include="Autofac" Version="4.9.4" />
     <PackageReference Include="FirebaseDatabase.net" Version="4.0.4" />
     <PackageReference Include="PropertyChanged.Fody" Version="2.6.1" />
-    <PackageReference Include="Xamarin.Firebase.iOS.Auth" Version="4.4.1.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991221" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\PairPage.xaml.cs">
       <DependentUpon>PairPage.xaml</DependentUpon>

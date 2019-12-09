@@ -6,7 +6,6 @@ D:\Year 2\LMKXamarin\LetMeKnow\LetMeKnow\LetMeKnow\obj\Debug\netstandard2.0\LetM
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.csprojAssemblyReference.cache
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\PairPage.xaml.g.cs
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.csproj.CoreCompileInputs.cache
@@ -19,3 +18,4 @@ D:\Year 2\LMKXamarin\LetMeKnow\bin\Debug\netstandard2.0\LetMeKnow.dll
 D:\Year 2\LMKXamarin\LetMeKnow\bin\Debug\netstandard2.0\LetMeKnow.pdb
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.csproj.Fody.CopyLocal.cache
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs

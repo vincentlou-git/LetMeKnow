@@ -208,12 +208,6 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Auth/4.4.1.1": {
-        "type": "package",
-        "build": {
-          "build/Xamarin.Firebase.iOS.Auth.targets": {}
-        }
-      },
       "Xamarin.Forms/4.3.0.991221": {
         "type": "package",
         "compile": {
@@ -1096,18 +1090,6 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "Xamarin.Firebase.iOS.Auth/4.4.1.1": {
-      "sha512": "2kuw4hEjcFtJw9gxZCnh4dgI2cit1uJFud2GcdSE/y/McDqwJEbO5u4qm2xsg6+kdWIYHTmDiv+oZPPflSO0hw==",
-      "type": "package",
-      "path": "xamarin.firebase.ios.auth/4.4.1.1",
-      "files": [
-        ".signature.p7s",
-        "build/Xamarin.Firebase.iOS.Auth.targets",
-        "lib/Xamarin.iOS10/Firebase.Auth.dll",
-        "xamarin.firebase.ios.auth.4.4.1.1.nupkg.sha512",
-        "xamarin.firebase.ios.auth.nuspec"
-      ]
-    },
     "Xamarin.Forms/4.3.0.991221": {
       "sha512": "L5M+N7a9ehVUEPjS6jqXlgB4yoiYk2ngKjUf0SIjI+L3HEHItqx9Ee+jrPMf1a+Oxxu/fmG0jkIISWordwrxOA==",
       "type": "package",
@@ -1363,7 +1345,6 @@
       "FirebaseDatabase.net >= 4.0.4",
       "NETStandard.Library >= 2.0.3",
       "PropertyChanged.Fody >= 2.6.1",
-      "Xamarin.Firebase.iOS.Auth >= 4.4.1.1",
       "Xamarin.Forms >= 4.3.0.991221"
     ]
   },
@@ -1425,10 +1406,6 @@
           "PropertyChanged.Fody": {
             "target": "Package",
             "version": "[2.6.1, )"
-          },
-          "Xamarin.Firebase.iOS.Auth": {
-            "target": "Package",
-            "version": "[4.4.1.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

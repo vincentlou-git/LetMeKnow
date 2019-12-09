@@ -23,5 +23,9 @@ namespace LetMeKnow.Droid.Database {
             FirebaseAuth.Instance.CreateUserWithEmailAndPassword(email, password);
             // TODO: Check what return value this should be from firebase documentation
         }
+
+        public async void SendPasswordResetEmail(string email) {
+            await FirebaseAuth.Instance.SendPasswordResetEmailAsync(email);
+        }
     }
 }

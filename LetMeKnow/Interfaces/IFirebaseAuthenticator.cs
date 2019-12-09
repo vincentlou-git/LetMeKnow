@@ -7,8 +7,13 @@ namespace LetMeKnow.Interfaces
 {
     // https://stackoverflow.com/questions/49607811/firebase-email-passord-authentication-using-xamarin-forms-with-net-standard-vs
     public interface IFirebaseAuthenticator {
-        // Password has to be created later through the reset password link
+        /** 
+         * Register:
+         * Enter email, createUserWithEmailAndPassword to firebase
+         * Send email for password reset
+         */
         void RegisterWithEmail(string email);
+        void SendPasswordResetEmail(string email);
         Task<string> LoginWithEmailAndPassword(string email, string password);
     }
 }

@@ -9,5 +9,9 @@ namespace LetMeKnow.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public bool IsBusy { protected set; get;  }
+
+        protected void OnPropertyChanged(string propertyName = null) {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
