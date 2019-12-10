@@ -27,6 +27,7 @@ namespace LetMeKnow.Droid
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
+            //DatabaseManager.GetFirebaseApp();
             FirebaseApp.InitializeApp(Application.Context);
 
             LoadApplication(new App(new DatabaseManager()));
@@ -35,9 +36,6 @@ namespace LetMeKnow.Droid
         public override void OnBackPressed() {
             if (Rg.Plugins.Popup.Popup.SendBackPressed(base.OnBackPressed)) {
                 // Do something if there are some pages in the `PopupStack`
-            }
-            else {
-                // Do something if there are not any pages in the `PopupStack`
             }
         }
     }

@@ -3,7 +3,6 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using Firebase.Database;
 using System.Collections.Generic;
 using System.Reflection;
 using System;
@@ -25,7 +24,6 @@ namespace LetMeKnow {
 
         protected override void OnStart() {
             // Handle when your app starts
-            FirebaseClient firebase = new FirebaseClient("https://letmeknow-439fb.firebaseio.com/");
         }
 
         protected override void OnSleep() {
@@ -39,7 +37,7 @@ namespace LetMeKnow {
         private IContainer BuildContainer(Autofac.Module module) {
             var builder = new ContainerBuilder();
 
-            // Register every page logic class with assembly scanning
+            // Register every ViewModel class with assembly scanning
             var asm = Assembly.GetExecutingAssembly();
 
             builder.RegisterAssemblyTypes(asm)

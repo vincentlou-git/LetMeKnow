@@ -89,6 +89,9 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="IOSModule.cs" />
     <Compile Include="Main.cs" />
@@ -152,9 +155,6 @@
   <ItemGroup>
     <PackageReference Include="Autofac">
       <Version>4.9.4</Version>
-    </PackageReference>
-    <PackageReference Include="FirebaseDatabase.net">
-      <Version>4.0.4</Version>
     </PackageReference>
     <PackageReference Include="Rg.Plugins.Popup">
       <Version>1.2.0.223</Version>

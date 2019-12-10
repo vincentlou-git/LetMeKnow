@@ -6,11 +6,13 @@ D:\Year 2\LMKXamarin\LetMeKnow\LetMeKnow\LetMeKnow\obj\Debug\netstandard2.0\LetM
 D:\Year 2\LMKXamarin\LetMeKnow\bin\Debug\netstandard2.0\LetMeKnow.deps.json
 D:\Year 2\LMKXamarin\LetMeKnow\bin\Debug\netstandard2.0\LetMeKnow.dll
 D:\Year 2\LMKXamarin\LetMeKnow\bin\Debug\netstandard2.0\LetMeKnow.pdb
+D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.csprojAssemblyReference.cache
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\PairPage.xaml.g.cs
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
+D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\RegisterPopup.xaml.g.cs
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.csproj.CoreCompileInputs.cache
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.AssemblyInfoInputs.cache
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.AssemblyInfo.cs

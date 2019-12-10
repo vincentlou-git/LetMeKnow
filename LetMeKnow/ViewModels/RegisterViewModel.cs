@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+﻿using System.Windows.Input;
+
+using Rg.Plugins.Popup.Services;
 
 using LetMeKnow.Interfaces;
 
@@ -53,13 +49,18 @@ namespace LetMeKnow.ViewModels
             get { return email; }
         }
 
-        private void Register() {
+        public string Message { protected set; get; }
+
+        private async void Register() {
             //IsBusy = true;
             //propChangedCallBack();
+            
+            bool sendSuccess = await firebaseAuth.RegisterWithEmail(Email);
 
-            firebaseAuth.RegisterWithEmail(Email);
-            //(Application.Current as App).AuthToken = 
-            firebaseAuth.SendPasswordResetEmail(Email);
+            await PopupNavigation.Instance.PushAsync(new Views.RegisterPopup(sendSuccess, Email));
+            
+            // TODO: based on sendSuccess, make popup using rg.plugins.popup.
+            // TODO: Add the handling code for when user clicked that link (still don't know how it works)
 
             //IsBusy = false;
             //propChangedCallBack();
