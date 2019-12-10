@@ -69,6 +69,20 @@
           "build/_._": {}
         }
       },
+      "Rg.Plugins.Popup/1.2.0.223": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -115,6 +129,22 @@
           "build/_._": {}
         }
       },
+      "Xamarin.Firebase.iOS.Auth/6.2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.Firebase.iOS.Core": "6.1.0"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Auth.dll": {}
+        }
+      },
       "Xamarin.Firebase.iOS.Core/6.1.0": {
         "type": "package",
         "dependencies": {
@@ -130,7 +160,7 @@
           "lib/xamarinios10/Firebase.Core.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
       "Xamarin.Firebase.iOS.Database/6.0.0": {
@@ -279,6 +309,7 @@
           "Autofac": "4.9.4",
           "FirebaseDatabase.net": "4.0.4",
           "PropertyChanged.Fody": "2.6.1",
+          "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Forms": "4.3.0.991221"
         },
         "compile": {
@@ -357,6 +388,20 @@
           "build/_._": {}
         }
       },
+      "Rg.Plugins.Popup/1.2.0.223": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -403,6 +448,22 @@
           "build/_._": {}
         }
       },
+      "Xamarin.Firebase.iOS.Auth/6.2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.Firebase.iOS.Core": "6.1.0"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Auth.dll": {}
+        }
+      },
       "Xamarin.Firebase.iOS.Core/6.1.0": {
         "type": "package",
         "dependencies": {
@@ -418,7 +479,7 @@
           "lib/xamarinios10/Firebase.Core.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
       "Xamarin.Firebase.iOS.Database/6.0.0": {
@@ -567,6 +628,7 @@
           "Autofac": "4.9.4",
           "FirebaseDatabase.net": "4.0.4",
           "PropertyChanged.Fody": "2.6.1",
+          "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Forms": "4.3.0.991221"
         },
         "compile": {
@@ -645,6 +707,20 @@
           "build/_._": {}
         }
       },
+      "Rg.Plugins.Popup/1.2.0.223": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -691,6 +767,22 @@
           "build/_._": {}
         }
       },
+      "Xamarin.Firebase.iOS.Auth/6.2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.Firebase.iOS.Core": "6.1.0"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Auth.dll": {}
+        }
+      },
       "Xamarin.Firebase.iOS.Core/6.1.0": {
         "type": "package",
         "dependencies": {
@@ -706,7 +798,7 @@
           "lib/xamarinios10/Firebase.Core.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
       "Xamarin.Firebase.iOS.Database/6.0.0": {
@@ -855,6 +947,7 @@
           "Autofac": "4.9.4",
           "FirebaseDatabase.net": "4.0.4",
           "PropertyChanged.Fody": "2.6.1",
+          "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Forms": "4.3.0.991221"
         },
         "compile": {
@@ -933,6 +1026,20 @@
           "build/_._": {}
         }
       },
+      "Rg.Plugins.Popup/1.2.0.223": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -979,6 +1086,22 @@
           "build/_._": {}
         }
       },
+      "Xamarin.Firebase.iOS.Auth/6.2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.Firebase.iOS.Core": "6.1.0"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Auth.dll": {}
+        }
+      },
       "Xamarin.Firebase.iOS.Core/6.1.0": {
         "type": "package",
         "dependencies": {
@@ -994,7 +1117,7 @@
           "lib/xamarinios10/Firebase.Core.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
       "Xamarin.Firebase.iOS.Database/6.0.0": {
@@ -1143,6 +1266,7 @@
           "Autofac": "4.9.4",
           "FirebaseDatabase.net": "4.0.4",
           "PropertyChanged.Fody": "2.6.1",
+          "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Forms": "4.3.0.991221"
         },
         "compile": {
@@ -1287,6 +1411,36 @@
         "netstandardweaver/PropertyChanged.Fody.xcf",
         "propertychanged.fody.2.6.1.nupkg.sha512",
         "propertychanged.fody.nuspec"
+      ]
+    },
+    "Rg.Plugins.Popup/1.2.0.223": {
+      "sha512": "2AEafpsnoc4up+8WNBAF8Lzsza+sfoLMn6KwOr/mu4lw0ZSEJ4wOW7QUf5uF1bB4orE5F7cMq/Q5aURJ7PZW3A==",
+      "type": "package",
+      "path": "rg.plugins.popup/1.2.0.223",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll.mdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.pdb",
+        "lib/netstandard1.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard1.0/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.pdb",
+        "readme.txt",
+        "rg.plugins.popup.1.2.0.223.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "System.Reactive/4.0.0": {
@@ -1517,6 +1671,18 @@
         "build/Xamarin.Build.Download.targets",
         "xamarin.build.download.0.4.11.nupkg.sha512",
         "xamarin.build.download.nuspec"
+      ]
+    },
+    "Xamarin.Firebase.iOS.Auth/6.2.1.1": {
+      "sha512": "DVTKr9p1sS6LbVDq129zFvFD3LBoLYA0hKX+BSoxfFaxMJlVBwC3kcA/mUfLepEY8BhO+GS4BYwOr/b2NSNdrA==",
+      "type": "package",
+      "path": "xamarin.firebase.ios.auth/6.2.1.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/xamarinios10/Firebase.Auth.dll",
+        "xamarin.firebase.ios.auth.6.2.1.1.nupkg.sha512",
+        "xamarin.firebase.ios.auth.nuspec"
       ]
     },
     "Xamarin.Firebase.iOS.Core/6.1.0": {
@@ -1803,6 +1969,9 @@
       "Autofac >= 4.9.4",
       "FirebaseDatabase.net >= 4.0.4",
       "LetMeKnow >= 1.0.0",
+      "Rg.Plugins.Popup >= 1.2.0.223",
+      "Xamarin.Firebase.iOS.Auth >= 6.2.1.1",
+      "Xamarin.Firebase.iOS.Core >= 6.1.0",
       "Xamarin.Firebase.iOS.Database >= 6.0.0",
       "Xamarin.Forms >= 4.3.0.991221"
     ]
@@ -1851,6 +2020,18 @@
           "FirebaseDatabase.net": {
             "target": "Package",
             "version": "[4.0.4, )"
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "[1.2.0.223, )"
+          },
+          "Xamarin.Firebase.iOS.Auth": {
+            "target": "Package",
+            "version": "[6.2.1.1, )"
+          },
+          "Xamarin.Firebase.iOS.Core": {
+            "target": "Package",
+            "version": "[6.1.0, )"
           },
           "Xamarin.Firebase.iOS.Database": {
             "target": "Package",

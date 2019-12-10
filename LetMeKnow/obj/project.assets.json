@@ -102,6 +102,18 @@
           "build/PropertyChanged.Fody.props": {}
         }
       },
+      "Rg.Plugins.Popup/1.2.0.223": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "System.IO/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -514,6 +526,36 @@
         "netstandardweaver/PropertyChanged.Fody.xcf",
         "propertychanged.fody.2.6.1.nupkg.sha512",
         "propertychanged.fody.nuspec"
+      ]
+    },
+    "Rg.Plugins.Popup/1.2.0.223": {
+      "sha512": "2AEafpsnoc4up+8WNBAF8Lzsza+sfoLMn6KwOr/mu4lw0ZSEJ4wOW7QUf5uF1bB4orE5F7cMq/Q5aURJ7PZW3A==",
+      "type": "package",
+      "path": "rg.plugins.popup/1.2.0.223",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll.mdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.pdb",
+        "lib/netstandard1.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard1.0/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.pdb",
+        "readme.txt",
+        "rg.plugins.popup.1.2.0.223.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "System.IO/4.3.0": {
@@ -1345,6 +1387,7 @@
       "FirebaseDatabase.net >= 4.0.4",
       "NETStandard.Library >= 2.0.3",
       "PropertyChanged.Fody >= 2.6.1",
+      "Rg.Plugins.Popup >= 1.2.0.223",
       "Xamarin.Forms >= 4.3.0.991221"
     ]
   },
@@ -1406,6 +1449,10 @@
           "PropertyChanged.Fody": {
             "target": "Package",
             "version": "[2.6.1, )"
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "[1.2.0.223, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

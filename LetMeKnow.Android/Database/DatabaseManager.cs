@@ -29,26 +29,6 @@ namespace LetMeKnow.Droid.Database {
             return null;
         }
 
-        // https://firebase.google.com/docs/auth/android/email-link-auth
-        private ActionCodeSettings GetActionCodeSettings(string email) {
-            return ActionCodeSettings.NewBuilder()
-                // URL you want to redirect back to. The domain (www.example.com) for this
-                // URL must be whitelisted in the Firebase Console.
-                .SetUrl("www.google.com")
-                // This must be true
-                .SetHandleCodeInApp(true)
-                .SetIOSBundleId("com.example.ios")
-                .SetAndroidPackageName(
-                        "com.example.android",
-                        true,   /* installIfNotAvailable */
-                        "12"    /* minimumVersion */)
-                .Build();
-            //var user = FirebaseAuth.Instance.SendPasswordResetEmail(email, actionCodeSettings);
-            //var token = await user.get(false);
-            //return token.Token;
-            // Log.d(TAG, "Email sent.");
-        }
-
         protected override void Load(ContainerBuilder builder) {
             builder.RegisterType<DatabaseAuthenticator>().As<IFirebaseAuthenticator>().SingleInstance();
         }

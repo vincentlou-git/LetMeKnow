@@ -5,5 +5,6 @@
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xamarin.forms\4.3.0.991221\build\Xamarin.Forms.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\4.3.0.991221\build\Xamarin.Forms.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.firebase.ios.core\6.1.0\build\Xamarin.Firebase.iOS.Core.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.firebase.ios.core\6.1.0\build\Xamarin.Firebase.iOS.Core.targets')" />
   </ImportGroup>
 </Project>

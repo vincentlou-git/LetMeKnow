@@ -12,7 +12,7 @@ namespace LetMeKnow.Interfaces
          * Enter email, createUserWithEmailAndPassword to firebase
          * Send email for password reset
          */
-        void RegisterWithEmail(string email);
+        Task RegisterWithEmail(string email);
         void SendPasswordResetEmail(string email);
         Task<string> LoginWithEmailAndPassword(string email, string password);
     }
