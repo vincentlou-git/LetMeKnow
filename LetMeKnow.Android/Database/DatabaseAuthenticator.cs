@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Android.Util;
 using Firebase.Auth;
 
@@ -13,19 +14,18 @@ namespace LetMeKnow.Droid.Database {
             return token.Token;
         }
 
-        public async Task<bool> RegisterWithEmail(string email) {
-            var instance = FirebaseAuth.Instance;
-            if (instance == null) {
-                Log.Warn("FirebaseAuth", "Null instance");
-                //return false;
+        public async Task<RegisterState> RegisterWithEmail(string email) {
+            try {
+                var user = await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, Services.Random.RandomPassword(64));
+                await user.User.SendEmailVerificationAsync(GetActionCodeSettings());
+            } catch (FirebaseAuthInvalidCredentialsException e) {
+                return RegisterState.BadFormat;
+            } catch (FirebaseAuthUserCollisionException e) {
+                return RegisterState.UserCollision;
+            } catch (Exception e) {
+                return RegisterState.Fail;
             }
-
-            var user = await instance.CreateUserWithEmailAndPasswordAsync(email, Services.Random.RandomPassword(64));
-            await user.User.SendEmailVerificationAsync(GetActionCodeSettings());
-            //while (!task.IsComplete) {
-            //    // await. Do nothing
-            //}
-            return true; // return task.isSuccessful
+            return RegisterState.Success;
         }
         
         // https://firebase.google.com/docs/auth/android/email-link-auth
@@ -33,14 +33,14 @@ namespace LetMeKnow.Droid.Database {
             return ActionCodeSettings.NewBuilder()
                 // URL you want to redirect back to. The domain (www.example.com) for this
                 // URL must be whitelisted in the Firebase Console.
-                .SetUrl("www.example.com")
+                .SetUrl("https://letmeknow.page.link/Verify")
                 // This must be true
                 .SetHandleCodeInApp(true)
                 .SetIOSBundleId("com.LMKCoop.LetMeKnow")
                 .SetAndroidPackageName(
                         "com.LMKCoop.LetMeKnow",
                         true,   /* installIfNotAvailable */
-                        "12"    /* minimumVersion */)
+                        "1"    /* minimumVersion */)
                 .Build();
             //var user = FirebaseAuth.Instance.SendPasswordResetEmail(email, actionCodeSettings);
             //var token = await user.get(false);

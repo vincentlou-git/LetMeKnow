@@ -6,14 +6,16 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using LetMeKnow.Interfaces;
+
 namespace LetMeKnow.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegisterPopup : Rg.Plugins.Popup.Pages.PopupPage {
 
-        public RegisterPopup(bool isSuccessful, string email) {
+        public RegisterPopup(RegisterState registerState, string email) {
             InitializeComponent();
             this.BindingContext = (Application.Current as App).Container.Resolve<RegisterPopupViewModel>(
-                new TypedParameter(typeof(bool), isSuccessful),
+                new TypedParameter(typeof(RegisterState), registerState),
                 new TypedParameter(typeof(string), email));
         }
 

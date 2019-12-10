@@ -5,6 +5,7 @@ using Rg.Plugins.Popup.Services;
 using LetMeKnow.Interfaces;
 
 using Xamarin.Forms;
+using System;
 
 namespace LetMeKnow.ViewModels
 {
@@ -49,15 +50,12 @@ namespace LetMeKnow.ViewModels
             get { return email; }
         }
 
-        public string Message { protected set; get; }
-
         private async void Register() {
             //IsBusy = true;
             //propChangedCallBack();
-            
-            bool sendSuccess = await firebaseAuth.RegisterWithEmail(Email);
 
-            await PopupNavigation.Instance.PushAsync(new Views.RegisterPopup(sendSuccess, Email));
+            RegisterState rState = await firebaseAuth.RegisterWithEmail(Email);
+            await PopupNavigation.Instance.PushAsync(new Views.RegisterPopup(rState, Email));
             
             // TODO: based on sendSuccess, make popup using rg.plugins.popup.
             // TODO: Add the handling code for when user clicked that link (still don't know how it works)
