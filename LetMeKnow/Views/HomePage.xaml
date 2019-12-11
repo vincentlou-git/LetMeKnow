@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LetMeKnow.Views.HomePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+            
+                    <Button Text="HomeLink"
+                            Grid.Row="0"
+                            Grid.Column="0"/>
+                    <SearchBar Placeholder="Search User..."
+                               Grid.Row="0"
+                               Grid.Column="1" />
+                </Grid>
+
+                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="StudentIcon"
+                            Grid.Row="0"
+                            Grid.Column="0"/>
+                </Grid>
+                
+                <Label Text="{Binding UserName, StringFormat='@{0:G}'}"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="{Binding University}"
+                       TextColor="DarkGray"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="{Binding CourseBeginDate, StringFormat='Course Began: {0:DD} {0:MMMM} {0:YYYY}'}"
+                       TextColor="DarkSlateGray"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="{Binding GradDate, StringFormat='Course Began: {0:DD} {0:MMMM} {0:YYYY}'}"
+                       TextColor="DarkSlateGray"
+                       HorizontalTextAlignment="Center"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="Post"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            BackgroundColor="Aqua"/>
+                    <Button Text="Post"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            BackgroundColor="Khaki"/>
+                    <Button Text="Post"
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            BackgroundColor="OrangeRed"/>
+                    <Button Text="Post"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            BackgroundColor="PaleTurquoise"/>
+                    <Button Text="Post"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            BackgroundColor="Teal"/>
+                    <Button Text="Post"
+                            Grid.Row="1"
+                            Grid.Column="2"
+                            BackgroundColor="Ivory"/>
+                    <Button Text="Post"
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            BackgroundColor="Gainsboro"/>
+                    <Button Text="Post"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            BackgroundColor="BlueViolet"/>
+                    <Button Text="Post"
+                            Grid.Row="2"
+                            Grid.Column="2"
+                            BackgroundColor="Azure"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -25,7 +25,7 @@ namespace LetMeKnow.ViewModels {
                 await (Application.Current as App).MainPage.Navigation.PushAsync(new LoginPage());
             });
             PairCmd = new Command(async () => {
-                await (Application.Current as App).MainPage.Navigation.PushAsync(new PairPage());
+                await (Application.Current as App).MainPage.Navigation.PushAsync(new HomePage());
             });
         }
     }

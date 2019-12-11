@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System;
 
+using LetMeKnow.Services;
 using LetMeKnow.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -49,6 +50,7 @@ namespace LetMeKnow {
                 .Where(t => t.Namespace == "LetMeKnow.ViewModels");
 
             builder.RegisterModule(module);
+            builder.RegisterType<FirebaseDatabaseService>();
             return builder.Build();
         }
     }

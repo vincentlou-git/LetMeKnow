@@ -11,11 +11,9 @@ using Android.Util;
 namespace LetMeKnow.Droid.Database {
     public class FirebaseAuthenticator : IFirebaseAuthenticator {
         private readonly FirebaseAuth auth;
-        private readonly bool isVerifying;
 
         public FirebaseAuthenticator() {
             auth = FirebaseAuth.Instance;
-            isVerifying = false;
         }
 
         public async Task<string> LoginWithEmailAndPassword(string email, string password) {
@@ -72,6 +70,18 @@ namespace LetMeKnow.Droid.Database {
                 .Build());
             await auth.CurrentUser.UpdatePasswordAsync(password);
             await auth.CurrentUser.ReloadAsync();
+        }
+
+        public string GetDisplayName() {
+            if (auth == null) return null;
+
+            return auth.CurrentUser.DisplayName;
+        }
+
+        public string GetUid() {
+            if (auth == null) return null;
+
+            return auth.CurrentUser.Uid;
         }
 
         public string GetEmail() {

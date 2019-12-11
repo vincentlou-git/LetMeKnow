@@ -21,6 +21,8 @@ namespace LetMeKnow.Interfaces {
         void SendPasswordResetEmail(string email);
         Task<string> LoginWithEmailAndPassword(string email, string password);
 
+        string GetUid();
+        string GetDisplayName();
         string GetEmail();
         bool IsVerifying();
     }

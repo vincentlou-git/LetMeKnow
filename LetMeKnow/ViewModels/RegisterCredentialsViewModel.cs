@@ -67,7 +67,7 @@ namespace LetMeKnow.ViewModels {
             firebaseAuth.FinishRegistration(UserName, Password);
             await PopupNavigation.Instance.PushAsync(new GenericPopup("You finished registration!\nRedirecting to your homepage..."));
             // TODO: push HOME page
-            await (Application.Current as App).MainPage.Navigation.PushAsync(new LoginPage());
+            await (Application.Current as App).MainPage.Navigation.PushAsync(new HomePage());
         }
     }
 }
