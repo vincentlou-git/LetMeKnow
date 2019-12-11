@@ -22,17 +22,17 @@
                     x:Name="register"
                     VerticalOptions="{StaticResource btnVertOptions}"
                     HorizontalOptions="{StaticResource btnHorzOptions}"
-                    Clicked="register_Clicked" />
+                    Command="{Binding RegisterCmd}" />
             <Button Text="Login as Student/Staff"
                     x:Name="loginStudent"
                     VerticalOptions="{StaticResource btnVertOptions}"
                     HorizontalOptions="{StaticResource btnHorzOptions}"
-                    Clicked="login_Clicked" />
+                    Command="{Binding LoginCmd}" />
             <Button Text="Enter Pair Code as Parent"
                     x:Name="pair"
                     VerticalOptions="{StaticResource btnVertOptions}"
                     HorizontalOptions="{StaticResource btnHorzOptions}"
-                    Clicked="pair_Clicked" />
+                    Command="{Binding PairCmd}" />
 
         </StackLayout>
     </ContentPage.Content>

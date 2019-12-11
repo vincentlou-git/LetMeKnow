@@ -15,11 +15,16 @@ namespace LetMeKnow {
         public IContainer Container { get; }
         public string AuthToken { get; set; }
 
-        public App(Autofac.Module module) {
+        public App(Autofac.Module module, string isVerifying) {
             InitializeComponent();
 
             Container = BuildContainer(module);
-            MainPage = new NavigationPage(new MenuPage());
+            if (isVerifying == "Success") {
+                MainPage = new NavigationPage(new RegisterCredentialsPage());
+            }
+            else {
+                MainPage = new NavigationPage(new MenuPage());
+            }
         }
 
         protected override void OnStart() {

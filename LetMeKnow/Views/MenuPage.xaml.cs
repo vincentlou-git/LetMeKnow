@@ -10,23 +10,10 @@ using LetMeKnow.ViewModels;
 namespace LetMeKnow.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage : ContentPage {
-
-        // Menu Page is just a navigation page, not necessary to use MVVM
+        
         public MenuPage() {
             InitializeComponent();
-            //this.BindingContext = (Application.Current as App).Container.Resolve<MenuViewModel>();
-        }
-
-        private void register_Clicked(object sender, EventArgs e) {
-            Navigation.PushAsync(new RegisterPage());
-        }
-
-        private void login_Clicked(object sender, EventArgs e) {
-            Navigation.PushAsync(new LoginPage());
-        }
-
-        private void pair_Clicked(object sender, EventArgs e) {
-            Navigation.PushAsync(new PairPage());
+            this.BindingContext = (Application.Current as App).Container.Resolve<MenuViewModel>();
         }
     }
 }

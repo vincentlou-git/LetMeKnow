@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Autofac;
 
 using Android.App;
 using Android.Content.PM;
@@ -11,14 +11,11 @@ using Firebase;
 
 using LetMeKnow.Droid.Database;
 
-using Firebase.Auth;
-
 namespace LetMeKnow.Droid
 {
     [Activity(Label = "LetMeKnow", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-
         protected override async void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -30,15 +27,13 @@ namespace LetMeKnow.Droid
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            
+
             FirebaseApp.InitializeApp(Application.Context);
 
-            // Handle any intent here
-            await DatabaseAuthenticator.HandleEmailVerificationLink(this.Intent);
+            string isVerifying = await FirebaseAuthenticator.HandleEmailVerificationLink(this.Intent);
 
-            Android.Util.Log.Info("MAIN", "Returned from handle email await");
-
-            LoadApplication(new App(new DatabaseManager()));
+            // Add any differentiating variables if needed
+            LoadApplication(new App(new AndroidModule(), isVerifying));
         }
 
         public override void OnBackPressed() {

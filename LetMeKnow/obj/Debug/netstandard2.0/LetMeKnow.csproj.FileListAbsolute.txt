@@ -20,3 +20,5 @@ D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.csproj.Fody.Co
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.dll
 D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\LetMeKnow.pdb
+D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\GenericPopup.xaml.g.cs
+D:\Year 2\LMKXamarin\LetMeKnow\obj\Debug\netstandard2.0\Views\RegisterCredentialsPage.xaml.g.cs

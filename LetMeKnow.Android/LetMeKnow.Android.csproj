@@ -100,8 +100,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\DatabaseAuthenticator.cs" />
-    <Compile Include="Database\DatabaseManager.cs" />
+    <Compile Include="Database\FirebaseAuthenticator.cs" />
+    <Compile Include="AndroidModule.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

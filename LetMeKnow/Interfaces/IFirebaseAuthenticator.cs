@@ -15,10 +15,13 @@ namespace LetMeKnow.Interfaces {
          * Send email for verification
          */
         // Catch all the errors in this function, return the appropriate EmailState
-        Task<EmailState> RegisterWithEmail(string email);
+        Task<EmailState> SendRegisterEmail(string email);
         //void HandleEmailVerificationLink(string emailLink);
+        void FinishRegistration(string username, string password);
         void SendPasswordResetEmail(string email);
         Task<string> LoginWithEmailAndPassword(string email, string password);
-        
+
+        string GetEmail();
+        bool IsVerifying();
     }
 }
