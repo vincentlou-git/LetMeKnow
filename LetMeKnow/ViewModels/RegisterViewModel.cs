@@ -54,10 +54,9 @@ namespace LetMeKnow.ViewModels
             //IsBusy = true;
             //propChangedCallBack();
 
-            RegisterState rState = await firebaseAuth.RegisterWithEmail(Email);
+            EmailState rState = await firebaseAuth.RegisterWithEmail(Email);
             await PopupNavigation.Instance.PushAsync(new Views.RegisterPopup(rState, Email));
-            
-            // TODO: based on sendSuccess, make popup using rg.plugins.popup.
+
             // TODO: Add the handling code for when user clicked that link (still don't know how it works)
 
             //IsBusy = false;

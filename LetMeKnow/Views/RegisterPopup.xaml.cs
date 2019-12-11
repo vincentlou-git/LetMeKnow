@@ -12,10 +12,10 @@ namespace LetMeKnow.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegisterPopup : Rg.Plugins.Popup.Pages.PopupPage {
 
-        public RegisterPopup(RegisterState registerState, string email) {
+        public RegisterPopup(EmailState registerState, string email) {
             InitializeComponent();
             this.BindingContext = (Application.Current as App).Container.Resolve<RegisterPopupViewModel>(
-                new TypedParameter(typeof(RegisterState), registerState),
+                new TypedParameter(typeof(EmailState), registerState),
                 new TypedParameter(typeof(string), email));
         }
 

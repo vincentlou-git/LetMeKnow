@@ -2,5 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.LMKCoop.LetMeKnow" android:installLocation="preferExternal" android:versionCode="1" android:versionName="1.0">
 	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="28" />
   <application android:name="android.support.multidex.MultiDexApplication"></application>
-	<application android:label="LetMeKnow.Android"></application>
+	<application android:label="LetMeKnow.Android">
+    <!--https://forums.xamarin.com/discussion/130437/how-i-setup-google-firebase-dynamic-links-in-xamarin-forms-android-edition-->
+    <activity
+      android:name="com.LMKCoop.LetMeKnow">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.action.DEFAULT"/>
+        <category android:name="android.intent.action.BROWSABLE"/>
+        <data android:host="letmeknow.page.link"
+              android:scheme="https"
+              android:pathPrefix="/*"/>
+      </intent-filter>
+    </activity>
+  </application>
 </manifest>
