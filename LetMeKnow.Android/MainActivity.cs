@@ -19,7 +19,7 @@ namespace LetMeKnow.Droid
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
 
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override async void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
@@ -34,7 +34,9 @@ namespace LetMeKnow.Droid
             FirebaseApp.InitializeApp(Application.Context);
 
             // Handle any intent here
-            DatabaseAuthenticator.HandleEmailVerificationLink(this.Intent);
+            await DatabaseAuthenticator.HandleEmailVerificationLink(this.Intent);
+
+            Android.Util.Log.Info("MAIN", "Returned from handle email await");
 
             LoadApplication(new App(new DatabaseManager()));
         }

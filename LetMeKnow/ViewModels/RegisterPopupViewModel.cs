@@ -14,7 +14,7 @@ namespace LetMeKnow.ViewModels {
 
             switch (registerState) {
                 case EmailState.Success:
-                    Message = "We have sent an email to " + email + ".\n\nWithout closing this session, verify your email by clicking the link in the email.";
+                    Message = "We have sent an email to " + email + ".\n\nVerify your email by clicking the link in the email.";
                     
                     Preferences.Set("email", email); // save email locally
                     break;
