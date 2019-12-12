@@ -13,19 +13,17 @@ namespace LetMeKnow.ViewModels
         public DateTime CourseBeginDate { protected set; get; }
         public DateTime GradDate { protected set; get; }
 
-        private readonly FirebaseDatabaseService fds;
+        private readonly IFirebaseDatabaseActor database;
         private readonly IFirebaseAuthenticator auth;
 
-        public HomePageViewModel(FirebaseDatabaseService fds, IFirebaseAuthenticator auth) {
-            this.fds = fds;
+        public HomePageViewModel(IFirebaseDatabaseActor database, IFirebaseAuthenticator auth) {
+            this.database = database;
             this.auth = auth;
 
             UserName = auth.GetDisplayName();
             //University = fds.
             //CourseBeginDate = 
             //GradDate = 
-
-            fds.CreateCurrentUser();
         }
 
 

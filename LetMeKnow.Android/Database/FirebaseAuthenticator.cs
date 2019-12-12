@@ -63,13 +63,14 @@ namespace LetMeKnow.Droid.Database {
             await auth.SendPasswordResetEmailAsync(email);
         }
 
-        public async void FinishRegistration(string username, string password) {
+        public async Task<bool> FinishRegistration(string username, string password) {
             await auth.CurrentUser.UpdateProfileAsync(
                 new UserProfileChangeRequest.Builder()
                 .SetDisplayName(username)
                 .Build());
             await auth.CurrentUser.UpdatePasswordAsync(password);
             await auth.CurrentUser.ReloadAsync();
+            return true;
         }
 
         public string GetDisplayName() {

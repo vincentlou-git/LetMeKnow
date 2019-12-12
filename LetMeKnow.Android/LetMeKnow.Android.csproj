@@ -59,9 +59,6 @@
     <PackageReference Include="Autofac">
       <Version>4.9.4</Version>
     </PackageReference>
-    <PackageReference Include="FirebaseDatabase.net">
-      <Version>4.0.4</Version>
-    </PackageReference>
     <PackageReference Include="Rg.Plugins.Popup">
       <Version>1.2.0.223</Version>
     </PackageReference>
@@ -103,6 +100,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\FirebaseDatabase.cs" />
     <Compile Include="Database\FirebaseAuthenticator.cs" />
     <Compile Include="AndroidModule.cs" />
     <Compile Include="MainActivity.cs" />

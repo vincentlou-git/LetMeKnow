@@ -17,7 +17,7 @@ namespace LetMeKnow.Interfaces {
         // Catch all the errors in this function, return the appropriate EmailState
         Task<EmailState> SendRegisterEmail(string email);
         //void HandleEmailVerificationLink(string emailLink);
-        void FinishRegistration(string username, string password);
+        Task<bool> FinishRegistration(string username, string password);
         void SendPasswordResetEmail(string email);
         Task<string> LoginWithEmailAndPassword(string email, string password);
 

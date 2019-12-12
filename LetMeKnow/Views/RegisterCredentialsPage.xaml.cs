@@ -4,6 +4,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using LetMeKnow.ViewModels;
+using LetMeKnow.Interfaces;
+using Autofac.Core;
+using System;
 
 namespace LetMeKnow.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]

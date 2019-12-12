@@ -7,6 +7,7 @@ using LetMeKnow.Interfaces;
 using Xamarin.Forms;
 using System;
 using LetMeKnow.Views;
+using LetMeKnow.Services;
 
 namespace LetMeKnow.ViewModels {
     public class RegisterCredentialsViewModel : ViewModel {
@@ -14,11 +15,13 @@ namespace LetMeKnow.ViewModels {
         public ICommand FinishCmd { protected set; get; }
         public string Email { get; }
 
-        readonly IFirebaseAuthenticator firebaseAuth;
+        private readonly IFirebaseAuthenticator firebaseAuth;
+        private readonly IFirebaseDatabaseActor database;
 
-        public RegisterCredentialsViewModel(IFirebaseAuthenticator firebaseAuth) {
+        public RegisterCredentialsViewModel(IFirebaseAuthenticator firebaseAuth, IFirebaseDatabaseActor database) {
             Email = firebaseAuth.GetEmail();
             this.firebaseAuth = firebaseAuth;
+            this.database = database;
             FinishCmd = new Command(() => {
                 // Execute
                 FinRegister();
@@ -64,9 +67,9 @@ namespace LetMeKnow.ViewModels {
         }
 
         private async void FinRegister() {
-            firebaseAuth.FinishRegistration(UserName, Password);
+            await firebaseAuth.FinishRegistration(UserName, Password);
+            await database.CreateCurrentUser();
             await PopupNavigation.Instance.PushAsync(new GenericPopup("You finished registration!\nRedirecting to your homepage..."));
-            // TODO: push HOME page
             await (Application.Current as App).MainPage.Navigation.PushAsync(new HomePage());
         }
     }

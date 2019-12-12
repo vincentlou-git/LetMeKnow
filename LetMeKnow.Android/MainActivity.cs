@@ -10,6 +10,7 @@ using Android.OS;
 using Firebase;
 
 using LetMeKnow.Droid.Database;
+using Firebase.Database;
 
 namespace LetMeKnow.Droid
 {

@@ -5,11 +5,11 @@ using System.Text;
 namespace LetMeKnow.Models
 {
     public class User {
-        public string Uid { get; set; }
-        public string UserName { get; set; }
-        public bool IsVerified { get; }
-        public string PairToken { get; set; }
-        public int LastLogin { get; set; }
-        public int SubExpiryDate { get; set; }
+        public string email { get; set; }
+        public string userName { get; set; }
+        public string university { get; set; }
+        public string pairToken { get; set; }
+        public long lastLogin { get; set; }
+        public long subExpiryDate { get; set; }
     }
 }
