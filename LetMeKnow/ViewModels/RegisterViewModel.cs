@@ -6,6 +6,7 @@ using LetMeKnow.Interfaces;
 
 using Xamarin.Forms;
 using System;
+using System.ComponentModel;
 
 namespace LetMeKnow.ViewModels
 {
@@ -15,7 +16,9 @@ namespace LetMeKnow.ViewModels
         //Action propChangedCallBack => (RegisterCmd as Command).ChangeCanExecute;
 
         readonly IFirebaseAuthenticator firebaseAuth;
-        
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public RegisterViewModel(IFirebaseAuthenticator firebaseAuth) {
             this.firebaseAuth = firebaseAuth;
             RegisterCmd = new Command(() => {
@@ -59,6 +62,10 @@ namespace LetMeKnow.ViewModels
 
             //IsBusy = false;
             //propChangedCallBack();
+        }
+
+        protected void OnPropertyChanged(string propertyName = null) {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

@@ -16,7 +16,11 @@ namespace LetMeKnow.Views
 		{
 			InitializeComponent ();
             this.BindingContext = (Application.Current as App).Container.Resolve<HomePageViewModel>();
-            Console.WriteLine(DateTime.Now.Ticks);
 		}
+
+        protected override async void OnAppearing() {
+            await (Application.Current as App).Container.Resolve<HomePageViewModel>().BeforeAppearing();
+            base.OnAppearing();
+        }
     }
 }

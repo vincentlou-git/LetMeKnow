@@ -11,28 +11,6 @@
           "lib/netstandard2.0/Autofac.dll": {}
         }
       },
-      "Fody/4.2.1": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "PropertyChanged.Fody/2.6.1": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "4.2.1",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.0/PropertyChanged.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/PropertyChanged.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -271,7 +249,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Autofac": "4.9.4",
-          "PropertyChanged.Fody": "2.6.1",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991221"
@@ -294,28 +271,6 @@
           "lib/netstandard2.0/Autofac.dll": {}
         }
       },
-      "Fody/4.2.1": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "PropertyChanged.Fody/2.6.1": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "4.2.1",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.0/PropertyChanged.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/PropertyChanged.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -554,7 +509,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Autofac": "4.9.4",
-          "PropertyChanged.Fody": "2.6.1",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991221"
@@ -577,28 +531,6 @@
           "lib/netstandard2.0/Autofac.dll": {}
         }
       },
-      "Fody/4.2.1": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "PropertyChanged.Fody/2.6.1": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "4.2.1",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.0/PropertyChanged.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/PropertyChanged.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -837,7 +769,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Autofac": "4.9.4",
-          "PropertyChanged.Fody": "2.6.1",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991221"
@@ -860,28 +791,6 @@
           "lib/netstandard2.0/Autofac.dll": {}
         }
       },
-      "Fody/4.2.1": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "PropertyChanged.Fody/2.6.1": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "4.2.1",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.0/PropertyChanged.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/PropertyChanged.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -1120,7 +1029,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Autofac": "4.9.4",
-          "PropertyChanged.Fody": "2.6.1",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991221"
@@ -1152,62 +1060,6 @@
         "lib/netstandard2.0/Autofac.dll",
         "lib/netstandard2.0/Autofac.pdb",
         "lib/netstandard2.0/Autofac.xml"
-      ]
-    },
-    "Fody/4.2.1": {
-      "sha512": "+qRvdH3bjQxGZ5DiuagjUj2UMXnDaqGc/04MLeI2lfjNVhLQ7oHcJwIV3n2wmQylF6RvPLjP/iPOukqAwZu0Hw==",
-      "type": "package",
-      "path": "fody/4.2.1",
-      "files": [
-        ".signature.p7s",
-        "build/Fody.targets",
-        "fody.4.2.1.nupkg.sha512",
-        "fody.nuspec",
-        "netclassictask/Fody.dll",
-        "netclassictask/FodyCommon.dll",
-        "netclassictask/FodyHelpers.dll",
-        "netclassictask/FodyIsolated.dll",
-        "netclassictask/Mono.Cecil.Mdb.dll",
-        "netclassictask/Mono.Cecil.Mdb.pdb",
-        "netclassictask/Mono.Cecil.Pdb.dll",
-        "netclassictask/Mono.Cecil.Pdb.pdb",
-        "netclassictask/Mono.Cecil.Rocks.dll",
-        "netclassictask/Mono.Cecil.Rocks.pdb",
-        "netclassictask/Mono.Cecil.dll",
-        "netclassictask/Mono.Cecil.pdb",
-        "netstandardtask/Fody.dll",
-        "netstandardtask/FodyCommon.dll",
-        "netstandardtask/FodyHelpers.dll",
-        "netstandardtask/FodyIsolated.dll",
-        "netstandardtask/Mono.Cecil.Mdb.dll",
-        "netstandardtask/Mono.Cecil.Mdb.pdb",
-        "netstandardtask/Mono.Cecil.Pdb.dll",
-        "netstandardtask/Mono.Cecil.Pdb.pdb",
-        "netstandardtask/Mono.Cecil.Rocks.dll",
-        "netstandardtask/Mono.Cecil.Rocks.pdb",
-        "netstandardtask/Mono.Cecil.dll",
-        "netstandardtask/Mono.Cecil.pdb"
-      ]
-    },
-    "PropertyChanged.Fody/2.6.1": {
-      "sha512": "/aLvkgNsRW8/7OOGU9tOIKtaHUZ8an1ziy8sDSjgbILnx4aNiV7ZmtyUsy6EUIJehyyNlVmRItcy+yoDBimW4g==",
-      "type": "package",
-      "path": "propertychanged.fody/2.6.1",
-      "files": [
-        ".signature.p7s",
-        "build/PropertyChanged.Fody.props",
-        "lib/net452/PropertyChanged.dll",
-        "lib/net452/PropertyChanged.xml",
-        "lib/netstandard1.0/PropertyChanged.dll",
-        "lib/netstandard1.0/PropertyChanged.xml",
-        "netclassicweaver/PropertyChanged.Fody.dll",
-        "netclassicweaver/PropertyChanged.Fody.pdb",
-        "netclassicweaver/PropertyChanged.Fody.xcf",
-        "netstandardweaver/PropertyChanged.Fody.dll",
-        "netstandardweaver/PropertyChanged.Fody.pdb",
-        "netstandardweaver/PropertyChanged.Fody.xcf",
-        "propertychanged.fody.2.6.1.nupkg.sha512",
-        "propertychanged.fody.nuspec"
       ]
     },
     "Rg.Plugins.Popup/1.2.0.223": {

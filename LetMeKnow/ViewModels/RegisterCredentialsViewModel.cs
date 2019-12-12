@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using System;
 using LetMeKnow.Views;
 using LetMeKnow.Services;
+using System.ComponentModel;
 
 namespace LetMeKnow.ViewModels {
     public class RegisterCredentialsViewModel : ViewModel {
@@ -47,7 +48,7 @@ namespace LetMeKnow.ViewModels {
                 }
             }
 
-            get { return username; }
+            get => username;
         }
         private string password = "";
         public string Password {
@@ -69,7 +70,7 @@ namespace LetMeKnow.ViewModels {
         private async void FinRegister() {
             await firebaseAuth.FinishRegistration(UserName, Password);
             await database.CreateCurrentUser();
-            await PopupNavigation.Instance.PushAsync(new GenericPopup("You finished registration!\nRedirecting to your homepage..."));
+            await PopupNavigation.Instance.PushAsync(new GenericPopup("You finished registration!\nNow redirecting to your homepage..."));
             await (Application.Current as App).MainPage.Navigation.PushAsync(new HomePage());
         }
     }

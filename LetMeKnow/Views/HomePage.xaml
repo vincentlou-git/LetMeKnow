@@ -35,17 +35,18 @@
                             Grid.Column="0"/>
                 </Grid>
                 
-                <Label Text="{Binding UserName, StringFormat='@{0:G}'}"
+                <Label Text="{Binding UserName, StringFormat='@{0}'}"
                        TextColor="Black"
                        HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding University}"
-                       TextColor="DarkGray"
-                       HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding CourseBeginDate, StringFormat='Course Began: {0:DD} {0:MMMM} {0:YYYY}'}"
+                <!--Whatever. The bindings actually don't work. The functions do retrieve the correct data.-->
+                <Label Text="{Binding University, StringFormat='Studies in University of Leeds'}"
                        TextColor="DarkSlateGray"
                        HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding GradDate, StringFormat='Course Began: {0:DD} {0:MMMM} {0:YYYY}'}"
-                       TextColor="DarkSlateGray"
+                <Label Text="{Binding CourseBeginDate, StringFormat='Course Began: SEP-2018'}"
+                       TextColor="DarkBlue"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="{Binding CourseEndDate, StringFormat='Grad Date: JUL-2022'}"
+                       TextColor="DarkBlue"
                        HorizontalTextAlignment="Center"/>
 
                 <Grid>
@@ -64,10 +65,11 @@
                             Grid.Row="0"
                             Grid.Column="0"
                             BackgroundColor="Aqua"/>
-                    <Button Text="Post"
+                    <Button Text="DELETE POST"
+                            Command="{Binding DeletePostCmd}"
                             Grid.Row="0"
                             Grid.Column="1"
-                            BackgroundColor="Khaki"/>
+                            BackgroundColor="Red"/>
                     <Button Text="Post"
                             Grid.Row="0"
                             Grid.Column="2"
