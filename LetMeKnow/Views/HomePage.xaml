@@ -34,18 +34,17 @@
                             Grid.Row="0"
                             Grid.Column="0"/>
                 </Grid>
-                
+
                 <Label Text="{Binding UserName, StringFormat='@{0}'}"
                        TextColor="Black"
                        HorizontalTextAlignment="Center"/>
-                <!--Whatever. The bindings actually don't work. The functions do retrieve the correct data.-->
-                <Label Text="{Binding University, StringFormat='Studies in University of Leeds'}"
+                <Label Text="{Binding University, StringFormat='Studies in {0}'}"
                        TextColor="DarkSlateGray"
                        HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding CourseBeginDate, StringFormat='Course Began: SEP-2018'}"
+                <Label Text="{Binding CourseBeginDate, StringFormat='Course Began: {0:MMM}-{0:YYYY}'}"
                        TextColor="DarkBlue"
                        HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding CourseEndDate, StringFormat='Grad Date: JUL-2022'}"
+                <Label Text="{Binding CourseEndDate, StringFormat='Grad Date: {0:MMM}-{0:YYYY}'}"
                        TextColor="DarkBlue"
                        HorizontalTextAlignment="Center"/>
 

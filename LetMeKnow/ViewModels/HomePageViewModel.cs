@@ -68,7 +68,7 @@ namespace LetMeKnow.ViewModels
 
             DeletePostCmd = new Command(async () => {
                 // Execute
-                bool success = database.DeleteCurrUserPostAt(637117713349292756);
+                bool success = database.DeleteCurrUserPostAt(637117832248875269);
                 Console.WriteLine("Delete success? " + success);
             });
 
